@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+
+  - shell: uptime
+  - file: path=/tmp/123 state=directory
+  - shell: netstat -ntlup | grep 80
+  - mssql_db:
+    name: jackdata
+    state: present

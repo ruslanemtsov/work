@@ -1,0 +1,6 @@
+---
+- hosts: vpnserver
+  become: true
+#  sudo: yes
+  roles:
+    - softethervpn

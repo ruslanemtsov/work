@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install Exim4
+      become: true
+      apt:
+        name: exim4
+        state: present
+
+

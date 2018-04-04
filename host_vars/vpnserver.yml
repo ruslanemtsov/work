@@ -1,0 +1,2 @@
+openvpn_is_client: False
+openvpn_is_server: True

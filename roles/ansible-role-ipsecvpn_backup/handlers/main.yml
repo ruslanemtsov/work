@@ -1,0 +1,12 @@
+---
+# handlers file
+- name: restart ipsec service
+  service:
+    name: strongswan
+    state: restarted
+
+- name: restart xl2tpd service
+  service:
+    name: xl2tpd
+    state: restarted
+

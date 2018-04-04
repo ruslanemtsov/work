@@ -1,0 +1,7 @@
+# Start service mysql
+---
+- hosts: localhost
+  tasks:
+  - service:
+     name: mysql
+     state: started

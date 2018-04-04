@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Install programm
+      become: true
+      apt:
+        name: pv
+        state: latest

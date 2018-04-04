@@ -1,0 +1,23 @@
+---
+    - name: Install NGINX
+      apt:
+       name: nginx
+       state: latest
+       install_recommends: no
+
+#    - name: Install Nginx
+#      apt: pkg=nginx state=latest
+#      when: nginx_repo|success
+#      register: nginxinstalled
+#      notify:
+#          - nginx start
+
+#    - name: Add NGINX cofig
+#      when: nginxinstalled|success
+#      template: src={{ domain }}.conf dest=/etc/nginx/conf.d/{{ domain }}.conf owner=nginx group=nginx
+
+#    - name: Create Web Root
+#      when: nginxinstalled|success
+#      file: path={{ root }}  mode=775 state=directory owner=nginx group=nginx
+#      notify:
+#          - nginx restart

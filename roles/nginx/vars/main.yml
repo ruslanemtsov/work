@@ -1,0 +1,5 @@
+---
+    hostname: ans2.domain.local
+    user: taurus
+    cgi_port: 9001
+    root: /var/www/vhosts
